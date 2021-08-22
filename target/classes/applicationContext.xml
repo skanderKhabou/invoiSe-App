@@ -7,10 +7,9 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
     <bean class="com.mycompany.invoise.service.InvoiceServicePrefix">
-        <property name="lastNumber" value="118"/>
-        <property name="prefix" value="NUM_"/>
         <property name="fichier" value="C:\\temp\\toto.txt"/>
     </bean>
 
