@@ -8,7 +8,7 @@
         <property name="invoiceRepository" ref="invoiceRepository"/>
     </bean>
 
-    <bean  class="com.mycompany.invoise.controller.InvoiceControllerWeb">
+    <bean  class="com.mycompany.invoise.controller.InvoiceControllerKeyboard">
         <property name="invoiceService" ref="invoiceService"/>
     </bean>
 
