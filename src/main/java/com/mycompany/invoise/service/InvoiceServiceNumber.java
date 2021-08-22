@@ -2,9 +2,11 @@ package com.mycompany.invoise.service;
 
 import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class InvoiceServiceNumber implements InvoiceServiceInterface{
     private static long lastNumber=0L;
+    @Autowired
     private InvoiceRepositoryInterface invoiceRepository;
 
 
